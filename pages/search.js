@@ -9,16 +9,22 @@ const SearchPage = ({ articles }) => {
 
   return (
     <Layout title='Search page'>
-      <Link href='/'>Back home</Link>
-      <h1>
-        {articles.length} Searches for {router.query.searchTerm}
-      </h1>
-      {articles.length === 0 && <h3>No articles available with this search</h3>}
+      <div className='page-container'>
+        <a className='btn go-back'>
+          <Link href='/'> Back home</Link>
+        </a>
+        <h1 className='title'>
+          {articles.length} Searches for {router.query.searchTerm}
+        </h1>
+        {articles.length === 0 && (
+          <h2 className='title'>No articles available with this search</h2>
+        )}
 
-      <div>
-        {articles.map(article => (
-          <ArticleItem key={article.url} article={article} />
-        ))}
+        <div>
+          {articles.map(article => (
+            <ArticleItem key={article.url} article={article} />
+          ))}
+        </div>
       </div>
     </Layout>
   );

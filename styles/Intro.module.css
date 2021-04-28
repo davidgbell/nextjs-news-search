@@ -1,0 +1,15 @@
+.intro {
+  padding-bottom: var(--flow-space);
+  background: var(--alpha);
+  border-radius: var(--rounded);
+  color: var(--fg);
+  padding: 20px;
+  margin-top: var(--flow-space);
+  margin-bottom: var(--flow-mid);
+}
+@media (min-width: 640px) {
+  .intro {
+    margin-top: var(--flow-space);
+    margin-bottom: var(--flow-massive);
+  }
+}

@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const TopStoriesPage = ({ articles }) => {
   return (
     <Layout title='Top Stories today'>
-      <h1>Top Stories</h1>
+      <h1 className='title'>Top Stories</h1>
       <div>
         {articles.map(article => (
           <ArticleItem key={article.url} article={article} />

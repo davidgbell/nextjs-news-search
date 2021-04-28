@@ -6,7 +6,6 @@ import Footer from './Footer';
 import Header from './Header';
 
 const Layout = ({ title, description, children }) => {
-  const router = useRouter();
   return (
     <div>
       <Head>
@@ -15,7 +14,6 @@ const Layout = ({ title, description, children }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      {router.pathname === '/' && <h2>Hero component goes here</h2>}
       <div className={styles.container}>{children}</div>
       <Footer />
     </div>

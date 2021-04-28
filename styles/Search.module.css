@@ -1,4 +1,7 @@
 .search input {
-  padding: 2px 6px;
-  width: 300px;
+  width: 250px;
+  height: 35px;
+  padding: 5px;
+  border: 1px var(--fg) solid;
+  border-radius: 5px;
 }

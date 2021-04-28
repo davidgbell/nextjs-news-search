@@ -143,3 +143,14 @@ a {
 .btn:hover {
   background: var(--alpha-dark);
 }
+
+.title {
+  margin-top: var(--flow-space);
+  margin-bottom: var(--flow-mid);
+}
+.page-container {
+  padding: var(--flow-mid) 0;
+}
+.featured {
+  padding: var(--flow-space) 0;
+}

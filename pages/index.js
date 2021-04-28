@@ -1,18 +1,25 @@
 import Link from 'next/link';
+
+import styles from '../styles/Intro.module.css';
 import { ArticleItem } from '../components/ArticleItem';
 import Layout from '../components/Layout';
 
 const HomePage = ({ articles }) => {
   return (
     <Layout title='BT News' description='A React test completed by David Bell'>
-      <h1>Featured Stories</h1>
-      <div>
+      <div className={styles.intro}>
+        <h1>BT React Code Test - by David Bell</h1>
+        <p>28/04/2021</p>
+      </div>
+
+      <h2>Featured Articles</h2>
+      <div className='featured'>
         {articles.map(article => (
           <ArticleItem key={article.url} article={article} />
         ))}
         {articles.length > 0 && (
           <Link href='/top'>
-            <a className='btn'>All Top Stories today</a>
+            <a className='btn'>Read more</a>
           </Link>
         )}
       </div>
@@ -28,8 +35,6 @@ export const getServerSideProps = async () => {
   const stories = await res.json();
 
   const articles = stories.articles;
-
-  console.log(articles);
 
   return {
     props: {
