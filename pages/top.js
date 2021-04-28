@@ -1,19 +1,14 @@
-import Link from 'next/link';
 import { ArticleItem } from '../components/ArticleItem';
 import Layout from '../components/Layout';
 
-const HomePage = ({ articles }) => {
+const TopStoriesPage = ({ articles }) => {
   return (
-    <Layout title='BT News' description='A React test completed by David Bell'>
+    <Layout title='Top Stories today'>
+      <h1>Top Stories</h1>
       <div>
         {articles.map(article => (
           <ArticleItem key={article.url} article={article} />
         ))}
-        {articles.length > 0 && (
-          <Link href='/top'>
-            <a>All Top Stories today</a>
-          </Link>
-        )}
       </div>
     </Layout>
   );
@@ -21,7 +16,7 @@ const HomePage = ({ articles }) => {
 
 export const getServerSideProps = async () => {
   const res = await fetch(
-    `https://newsapi.org/v2/top-headlines?country=gb&apiKey=${process.env.API_KEY}&pageSize=5`
+    `https://newsapi.org/v2/top-headlines?country=gb&apiKey=${process.env.API_KEY}`
   );
 
   const stories = await res.json();
@@ -35,4 +30,4 @@ export const getServerSideProps = async () => {
   };
 };
 
-export default HomePage;
+export default TopStoriesPage;

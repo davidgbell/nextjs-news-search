@@ -7,7 +7,13 @@ const Header = () => {
     <header className={styles.headerContainer}>
       <div className={styles.logo}>
         <Link href='/'>
-          <a>BT News</a>
+          <a>
+            <Image
+              src='https://img01.bt.co.uk/s/assets/191120/images/logo/logo-2018.svg'
+              height={50}
+              width={50}
+            />
+          </a>
         </Link>
       </div>
 
