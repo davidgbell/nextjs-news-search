@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/Header.module.css';
-// import { Search } from './Search';
+import { Search } from './Search';
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* <Search /> */}
+      <Search />
 
       <nav>
         <ul>
