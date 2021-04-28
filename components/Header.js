@@ -19,21 +19,10 @@ const Header = () => {
       </div>
 
       <Search />
-
       <nav>
-        <ul>
-          <li>
-            <Link href='/top'>
-              <a>Top Stories</a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href='/about'>
-              <a>about</a>
-            </Link>
-          </li>
-        </ul>
+        <Link href='/top'>
+          <a className='btn'>Top Stories</a>
+        </Link>
       </nav>
     </header>
   );

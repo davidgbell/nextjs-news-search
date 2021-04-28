@@ -16,7 +16,7 @@ const TopStoriesPage = ({ articles }) => {
 
 export const getServerSideProps = async () => {
   const res = await fetch(
-    `https://newsapi.org/v2/top-headlines?country=gb&apiKey=${process.env.API_KEY}`
+    `https://newsapi.org/v2/top-headlines?country=gb&apiKey=${process.env.API_KEY}&pageSize=10`
   );
 
   const stories = await res.json();

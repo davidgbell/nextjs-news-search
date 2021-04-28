@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
+import styles from '../styles/Search.module.css';
 
 export const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -8,9 +9,10 @@ export const Search = () => {
 
   return (
     <form
+      className={styles.search}
       onSubmit={e => {
         e.preventDefault();
-        router.push(`/articles/search?searchTerm=${searchTerm}`);
+        router.push(`/search?searchTerm=${searchTerm}`);
         setSearchTerm('');
       }}>
       <input

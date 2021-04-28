@@ -16,10 +16,8 @@ const Layout = ({ title, description, children }) => {
       </Head>
       <Header />
       {router.pathname === '/' && <h2>Hero component goes here</h2>}
-      <div className={styles.container}>
-        {children}
-        <Footer />
-      </div>
+      <div className={styles.container}>{children}</div>
+      <Footer />
     </div>
   );
 };

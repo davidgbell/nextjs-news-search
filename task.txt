@@ -6,7 +6,7 @@ Using React and Fetch, host on Git or Github and commit often.
 
 Create a React component with a single form input field to allow users to search the newsapi.
 
-Please build a simple page (using the boilerplate HTML, CSS & JS). Please use the BT logo and colours provided below. Creat simple static header & footer.
+Please build a simple page (using the boilerplate HTML, CSS & JS). Please use the BT logo and colours provided below. Create simple static header & footer.
 The page needs to be mobile first responsive.
 Return no more than 10 results as a feed. Each result should contain the article title, publisher/author and a short paragraph of upto 150 characters. Please include all links provided within the article content.
 

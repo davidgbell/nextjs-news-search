@@ -5,13 +5,14 @@ import Layout from '../components/Layout';
 const HomePage = ({ articles }) => {
   return (
     <Layout title='BT News' description='A React test completed by David Bell'>
+      <h1>Featured Stories</h1>
       <div>
         {articles.map(article => (
           <ArticleItem key={article.url} article={article} />
         ))}
         {articles.length > 0 && (
           <Link href='/top'>
-            <a>All Top Stories today</a>
+            <a className='btn'>All Top Stories today</a>
           </Link>
         )}
       </div>
@@ -21,12 +22,14 @@ const HomePage = ({ articles }) => {
 
 export const getServerSideProps = async () => {
   const res = await fetch(
-    `https://newsapi.org/v2/top-headlines?country=gb&apiKey=${process.env.API_KEY}&pageSize=5`
+    `https://newsapi.org/v2/top-headlines?country=gb&apiKey=${process.env.API_KEY}&pageSize=3`
   );
 
   const stories = await res.json();
 
   const articles = stories.articles;
+
+  console.log(articles);
 
   return {
     props: {
