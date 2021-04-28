@@ -1,13 +1,10 @@
 import Head from 'next/head';
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>BT React Test - David Bell</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+    <Layout title='BT News' description='A React test completed by David Bell'>
       Hello World
-    </div>
+    </Layout>
   );
 }

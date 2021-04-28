@@ -1,0 +1,36 @@
+
+
+
+
+Using React and Fetch, host on Git or Github and commit often.
+
+Create a React component with a single form input field to allow users to search the newsapi.
+
+Please build a simple page (using the boilerplate HTML, CSS & JS). Please use the BT logo and colours provided below. Creat simple static header & footer.
+The page needs to be mobile first responsive.
+Return no more than 10 results as a feed. Each result should contain the article title, publisher/author and a short paragraph of upto 150 characters. Please include all links provided within the article content.
+
+Within the body of the page add basic H1 title e.g. BT React Code Test - by John Doe - #/01/21
+
+API - https://newsapi.org/ (you will need to get your own API key)
+
+BT logo  -  https://img01.bt.co.uk/s/assets/191120/images/logo/logo-2018.svg
+BT Purple -  #5514b4
+font family  - Calibri
+font colour  - header/footer = #ffffff 
+font colour  - body/p/span = #333333
+
+React - https://reactjs.org/
+
+Fetch - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+
+
+-----------------------------------------------------------------------------------------------
+
+Barbara and myself had a talk yesterday about this and we noted it depends on the level of developer required. For more junior roles, this test would be enough to see if the dev knew enough to get by on and can follow basic instructions.
+
+For a more senior positions it would be good to get them show some more complex abstracts (figure out how to add random orders for example or as Barbara did for an example, create a bingo game). It would also be worth pressing them for further considerations – security, accessibility, code reuse etc to see how fundamentally deep their understanding is as well how this could be practically applied within the remit of the tech-test as mentioned by Adrian. I’d say let them raise the issues if it’s for a senior or upwards position otherwise give them a few pointers.
+
+It would also be good to ask what their thoughts are on the tech choice and what other considerations should be noted about the tooling that they’ve been instructed to use (fetch for example not working on IE11).
+
+Finally it’s probably a good idea to see what extra features/future development they can think of to further enhance the component later on. How would they implement it, share it between teams etc.

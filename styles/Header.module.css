@@ -1,0 +1,18 @@
+.headerContainer {
+  flex-direction: column;
+  height: auto;
+  background: var(--bt);
+  color: var(--fg);
+}
+
+.headerContainer ul {
+  margin: 20px 0;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+
+.headerContainer a {
+  margin-right: 0;
+  color: var(--fg);
+}
