@@ -11,14 +11,14 @@ export const Search = () => {
     setSearchTerm(e.target.value);
   };
 
-  const onSubmit = e => {
+  const handleSubmit = e => {
     e.preventDefault();
     router.push(`/search?searchTerm=${searchTerm}`);
     setSearchTerm('');
   };
 
   return (
-    <form className={styles.search} onSubmit={onSubmit}>
+    <form className={styles.search} onSubmit={handleSubmit}>
       <input
         type='text'
         name='search'
@@ -26,6 +26,9 @@ export const Search = () => {
         value={searchTerm || ''}
         placeholder='search'
       />
+      <button className='btn' type='submit' onClick={handleSubmit}>
+        Search
+      </button>
     </form>
   );
 };

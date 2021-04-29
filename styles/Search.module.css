@@ -1,9 +1,18 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .search input {
   width: 250px;
-  height: 35px;
+  height: 38px;
   padding: 5px;
   border: 1px var(--fg) solid;
   border-radius: 5px;
+}
+.search button {
+  border: none;
+  margin-left: 5px;
 }
 
 @media (min-width: 640px) {

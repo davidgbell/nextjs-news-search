@@ -1,7 +1,7 @@
 .intro {
   padding-bottom: var(--flow-space);
   margin-top: var(--flow-space);
-  margin-bottom: var(--flow-mid);
+  margin-bottom: var(--flow-space);
   font-size: 34px;
   letter-spacing: 0.5px;
   line-height: 1;
