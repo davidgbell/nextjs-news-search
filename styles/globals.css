@@ -7,6 +7,8 @@
   --bg-darkish: #101216;
   --fg: #fff;
   --bt: #5514b4;
+  --alpha: #e40e53;
+  --alpha-dark: #c30d4c;
   --accents-1: #111111;
   --accents-2: #333333;
   --accents-3: #444444;
@@ -16,6 +18,7 @@
   --flow-space: 1.75rem;
   --flow-mid: 3.5rem;
   --flow-large: 5rem;
+  --flow-massive: 10rem;
 }
 
 /* Box sizing rules */
@@ -124,7 +127,7 @@ a {
   text-decoration: none;
 }
 
-/* ------- Components --------- */
+/* ----------- Components ---------- */
 
 .btn {
   background: var(--alpha);
@@ -145,5 +148,5 @@ a {
   padding: var(--flow-mid) 0;
 }
 .featured {
-  padding: var(--flow-large) 0;
+  padding: var(--flow-space) 0;
 }
