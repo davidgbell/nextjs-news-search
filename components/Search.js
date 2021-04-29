@@ -21,6 +21,7 @@ export const Search = () => {
     <form className={styles.search} onSubmit={handleSubmit}>
       <input
         type='text'
+        id='search'
         name='search'
         onChange={handleChange}
         value={searchTerm || ''}
