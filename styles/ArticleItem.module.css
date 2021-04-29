@@ -1,23 +1,31 @@
 .articleItem {
   margin: var(--flow-space) 0;
   padding: var(--flow-space);
-  background: var(--bt);
-  color: var(--fg);
   border-radius: var(--rounded);
   box-shadow: var(--shadow-medium);
+  will-change: transform;
+  transition: transform 450ms;
+}
+.articleItem:hover {
+  transition: transform 150ms;
+  transform: translateY(-10px);
 }
 
 .articleItem h3 {
   padding-bottom: var(--flow-space);
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bolder;
 }
 .articleItem p {
   padding-bottom: var(--flow-space);
 }
 .articleItem span {
   font-weight: bold;
+  color: var(--bg);
 }
-
+.content {
+  font-family: var(--font-plain);
+}
 .author {
   padding-bottom: var(--flow-space);
 }

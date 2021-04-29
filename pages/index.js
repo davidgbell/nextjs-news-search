@@ -8,12 +8,16 @@ const HomePage = ({ articles }) => {
   return (
     <Layout title='BT News' description='A React test completed by David Bell'>
       <div className={styles.intro}>
-        <h1>BT React Code Test - by David Bell</h1>
-        <p>28/04/2021</p>
+        <h1>
+          <span className={styles.codeTest}>by David Bell</span>
+          <br />
+          <span className={styles.by}>BT React Code Test</span>
+        </h1>
+        <p>29/04/2021</p>
       </div>
 
-      <h2>Featured Articles</h2>
       <div className='featured'>
+        <h2>Featured Articles</h2>
         {articles.map(article => (
           <ArticleItem key={article.url} article={article} />
         ))}

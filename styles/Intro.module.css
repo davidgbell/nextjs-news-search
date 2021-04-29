@@ -1,15 +1,25 @@
 .intro {
   padding-bottom: var(--flow-space);
-  background: var(--alpha);
-  border-radius: var(--rounded);
-  color: var(--fg);
-  padding: 20px;
   margin-top: var(--flow-space);
   margin-bottom: var(--flow-mid);
+  font-size: 34px;
+  letter-spacing: 0.5px;
+  line-height: 1;
 }
+.codeTest {
+  font-size: 18px;
+}
+.intro p {
+  font-size: 12px;
+  padding-top: 1rem;
+}
+
 @media (min-width: 640px) {
   .intro {
     margin-top: var(--flow-space);
-    margin-bottom: var(--flow-massive);
+    margin-bottom: var(--flow-large);
+  }
+  .intro p {
+    font-size: 20px;
   }
 }

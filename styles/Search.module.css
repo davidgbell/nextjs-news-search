@@ -5,3 +5,9 @@
   border: 1px var(--fg) solid;
   border-radius: 5px;
 }
+
+@media (min-width: 640px) {
+  .search input {
+    width: 350px;
+  }
+}

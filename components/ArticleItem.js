@@ -7,7 +7,9 @@ export const ArticleItem = ({ article }) => {
       <p className={styles.author}>
         <span>Author:</span> {article.author}
       </p>
-      {article.content && <p>{article?.content?.slice(0, 150)}</p>}
+      {article.content && (
+        <p className={styles.content}>{article?.content?.slice(0, 150)}</p>
+      )}
       <div className={styles.links}>
         <p>
           <a className='btn' href={article.url}>

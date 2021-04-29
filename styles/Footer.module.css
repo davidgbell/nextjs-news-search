@@ -1,8 +1,12 @@
 .footerContainer {
   background: var(--bt);
-  color: var(--fg);
-  bottom: 0;
-  height: 50px;
+  width: 100%;
+  height: 75px;
+  text-align: center;
   display: grid;
   place-items: center;
+}
+.footerContainer p {
+  color: var(--fg);
+  margin: auto 0;
 }

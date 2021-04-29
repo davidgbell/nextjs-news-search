@@ -17,7 +17,7 @@
   --accents-8: #fafafa;
   --error: #ff0000;
   --error-light: #ff3333;
-  --erro-dark: #e60000;
+  --error-dark: #e60000;
   --alpha: #e40e53;
   --alpha-dark: #c30d4c;
   --rounded: 8px;
@@ -56,16 +56,6 @@ dd {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
-  font-family: var(--font-bravo);
-}
-
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -82,13 +72,28 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: var(--font-plain);
+  font-family: var(--font-bravo);
   font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-bravo);
+  font-weight: 600;
+}
+
+p {
+  color: var(--accents-3);
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  color: inherit;
 }
 
 /* Make images easier to work with */
@@ -103,7 +108,7 @@ input,
 button,
 textarea,
 select {
-  font: var(--font-bravo);
+  font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -126,7 +131,7 @@ select {
 
 @media (min-width: 640px) {
   body {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -147,10 +152,11 @@ a {
 .title {
   margin-top: var(--flow-space);
   margin-bottom: var(--flow-mid);
+  font-weight: bolder;
 }
 .page-container {
   padding: var(--flow-mid) 0;
 }
 .featured {
-  padding: var(--flow-space) 0;
+  padding: var(--flow-large) 0;
 }

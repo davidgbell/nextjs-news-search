@@ -10,9 +10,6 @@ const SearchPage = ({ articles }) => {
   return (
     <Layout title='Search page'>
       <div className='page-container'>
-        <a className='btn go-back'>
-          <Link href='/'> Back home</Link>
-        </a>
         <h1 className='title'>
           {articles.length} Searches for {router.query.searchTerm}
         </h1>
